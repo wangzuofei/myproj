@@ -1,5 +1,17 @@
-var name = '郭美如';
+'use strict';
 
-var s = 'hello,'+name;
+var s = 'Hello';
 
-console.log(s);
+function greet(name) {
+    console.log(s + ', ' + name + '!');
+}
+
+function biaoYang(name){
+    console.log('你真是太棒了，'+name);
+}
+
+function piPing(name){
+    console.log('你真是垃圾了，'+name);
+}
+module.exports.biaoYang = biaoYang;
+module.exports.piPing = piPing;
